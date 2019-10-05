@@ -59,6 +59,10 @@ header .overlay {
   margin: 0 20px;
 }
 
+.owl-stage {
+  height: 100%;
+}
+
 .card {
   box-shadow: 0.5px 0.5px 10px 0px #b80000;
 }
