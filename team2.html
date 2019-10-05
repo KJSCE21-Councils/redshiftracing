@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/owl.carousel.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <div class="owl-carousel">
+        <div class="item">
+            <img src="media/images/rsr/rsr1.jpeg" style="width:250px;height:auto;">
+        </div>
+        <div class="item">
+            <img src="media/images/rsr/rsr2.jpeg" style="width:250px;height:auto;">
+        </div>
+        <div class="item">
+            <img src="media/images/rsr/rsr3.jpeg" style="width:250px;height:auto;">
+        </div>
+        <div class="item">
+            <img src="media/images/rsr/rsr4.jpeg" style="width:250px;height:auto;">
+        </div>
+        <div class="item">
+            <img src="media/images/rsr/rsr5.jpeg" style="width:250px;height:auto;">
+        </div>
+        <div class="item">
+            <img src="media/images/rsr/rsr6.jpeg" style="width:250px;height:auto;">
+        </div>
+        <div class="item">
+            <img src="media/images/rsr/rsr7.jpeg" style="width:250px;height:auto;">
+        </div>
+    </div>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
