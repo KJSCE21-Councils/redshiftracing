@@ -3,7 +3,7 @@
 }
 
 .navbar {
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: 99;
 }
@@ -75,7 +75,7 @@
 }
 
 .navigation-padding {
-  padding-top: 76px;
+  padding-top: 86px;
 }
 
 /* .navbar-light .navbar-nav .nav-link {
