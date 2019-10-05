@@ -344,3 +344,9 @@ header .overlay {
     max-width: 100% !important;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  header video {
+    width: 100% !important;
+  }
+}
