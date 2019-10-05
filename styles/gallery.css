@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+.col-sm-4 {
+  padding: 1px;
+  justify-content: center;
+  text-align: center;
+}
+
+.row {
+  justify-content: center;
+  text-align: center;
+}
+
+#gallery-title {
+  text-align: center;
+}
+
+.img-fluid {
+  filter: brightness(0.5);
+}
+
+.img-fluid:hover {
+  filter: brightness(1);
+}
+

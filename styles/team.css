@@ -1,0 +1,42 @@
+.col-sm-4 {
+  padding: 0;
+}
+
+.card {
+  border: 1px solid gray;
+}
+
+.card h4 {
+  text-decoration: underline;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.tabbed-navigation .nav-link {
+  color: black !important;
+}
+.tabbed-navigation .nav-link:hover {
+  color: red !important;
+}
+.tabbed-navigation .nav-link.active {
+  color: red !important;
+}
+
+.nav-tabs a {
+  font-size: 18px;
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.nav-tabs > .nav-link {
+  color: black;
+}

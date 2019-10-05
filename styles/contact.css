@@ -1,0 +1,67 @@
+.map-container-6 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-6 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact_details p {
+  padding: 0;
+  margin: 0;
+}
+
+.col-sm-6 p {
+  margin: 1% 5%;
+}
+
+.col-sm-6 {
+  margin: 0;
+  padding: 2.5% 0;
+}
+
+.contacts {
+  background: #e92730;
+  color: white;
+  border-radius: 5px;
+}
+
+.card {
+  border: 1px solid gray;
+}
+
+form p {
+  margin: 1% 2%;
+  color: black;
+}
+
+textarea {
+  margin: 1% 2%;
+  padding: 5px;
+  width: 95%;
+}
+
+input {
+  margin: 1% 2%;
+  padding: 5px;
+  width: 95%;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: #e92730;
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  padding: 3px;
+  font-weight: 450;
+  min-width: 20%;
+  height: auto;
+}
