@@ -28,8 +28,7 @@
 }
 
 .contacts {
-  background: #e92730;
-  color: white;
+  border: 1.5px solid #e92730;
   border-radius: 5px;
 }
 

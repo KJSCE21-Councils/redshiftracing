@@ -46,7 +46,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html" style="max-width:180px;">
                     <img src="media/images/rsr-logo.jpg" alt="Redshift Racing Logo" style="width:100%; height:auto;">
@@ -78,7 +78,8 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+        <div id="navigation"></div>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="height:100%;">
             <source src="media/videos/rsr.mp4" type="video/mp4">
@@ -99,28 +100,58 @@
     <section class="container py-2" id="about">
         <h1 class="py-4 text-center" data-aos="fade-up">About Us</h1>
         <div class="row justify-content-center">
-            <div class="col-sm-5 m-1" id="mission" data-aos="flip-left" data-aos-delay="500">
+            <div class="col-sm-5 m-2 p-3" id="mission" data-aos="flip-left" data-aos-delay="500">
                 <h2>Our Mission</h2>
-                <p>“To achieve our goals through assiduous work.” <br> Because at RedShift Racing, we believe that
-                    Teamwork and Dedication, when coupled with absolute Focus, results in flawless Success. <br> Our
-                    team tries to bring these ideals into practice
-                    in whatever we do.</p>
+                <p>“Build an efficient single seater All terrain vehicle with an impeccable Design .
+                    Continuous Innovation, improvisation and optimization
+                    To achieve our goals through assiduous work.”
+                </p>
             </div>
-            <div class="col-sm-5 m-1" id="vision" data-aos="flip-right" data-aos-delay="500">
+            <div class="col-sm-5 m-2 p-3" id="vision" data-aos="flip-right" data-aos-delay="500">
                 <h2>Our Vision</h2>
-                <p>“To aver that we are the best team among the elites.” <br> Success is a journey more than destination
-                    in today’s competitive world the limits are waiting to be challenged.
-                    <br> At RedShift Racing, being the best is not just being better than the rest; it is meticulous
-                    precision coupled with tireless efforts. Because limits are waiting…</p>
+                <p>"Compete with the best engineering minds nationally and internationally .
+                    We believe ‘ Manufacturing vehicles for all terrain is much cheaper than building roads for rough
+                    terrains’.<br>
+                    “To aver that we are the best team among the elites.”
+                </p>
             </div>
         </div>
     </section>
 
     <br>
 
+    <div class="container justify-content-center">
+        <h1 class="py-2 text-center" data-aos="fade-up" data-aos-delay="1000">Gallery</h1>
+        <div class="owl-carousel" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr1.jpeg">
+            </div>
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr2.jpeg">
+            </div>
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr3.jpeg">
+            </div>
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr4.jpeg">
+            </div>
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr5.jpeg">
+            </div>
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr6.jpeg">
+            </div>
+            <div class="item m-1">
+                <img src="media/images/rsr/rsr7.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
     <div class="container">
         <div class="page-header text-center">
-            <h1 id="timeline">Success</h1>
+            <h1 id="timeline">Journey So Far</h1>
         </div>
         <ul class="timeline">
             <li>
@@ -298,38 +329,9 @@
 
     <hr>
 
-    <div class="container justify-content-center">
-        <h1 class="py-2 text-center" data-aos="fade-up" data-aos-delay="1000">Gallery</h1>
-        <div class="owl-carousel" data-aos="zoom-in" data-aos-delay="1000">
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr1.jpeg">
-            </div>
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr2.jpeg">
-            </div>
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr3.jpeg">
-            </div>
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr4.jpeg">
-            </div>
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr5.jpeg">
-            </div>
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr6.jpeg">
-            </div>
-            <div class="item m-1">
-                <img src="media/images/rsr/rsr7.jpeg">
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container justify-content-center">
-        <h1 class="py-2 text-center" data-aos="fade-up" data-aos-delay="1000">Press &amp; Media</h1>
-        <div class="owl-carousel" data-aos="zoom-in" data-aos-delay="1000">
+    <div class="container justify-content-center" id="print">
+        <h1 class="py-2 text-center" data-aos="fade-up" data-aos-delay="500">Press &amp; Media</h1>
+        <div class="owl-carousel" data-aos="zoom-in" data-aos-delay="500">
             <div class="item m-1">
                 <img src="media/images/press/press1.jpeg">
             </div>
@@ -347,6 +349,7 @@
             </div>
         </div>
     </div>
+    <!--
     <div class="container h-50">
         <div class="owl-carousel">
             <div class="owl" data-aos="zoom-in" data-aos-delay="1000">
@@ -409,14 +412,14 @@
             </div>
         </div>
     </div>
-
+    -->
     <hr>
 
     <div class="container" data-aos="zoom-in">
         <h1 class="text-center" data-aos="fade-up" data-aos-delay="500">Updates</h1>
         <br>
-        <div class="row">
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+        <div class="row justify-content-center">
+            <div class="col-md-3 h-100" data-aos="zoom-in" data-aos-delay="200">
                 <div class="card mx-auto my-2">
                     <img src="media/images/updates/up1.jpeg" class="card-img-top" alt="RSR Update 1">
                     <div class="card-body">
@@ -424,7 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="col-md-3 h-100" data-aos="zoom-in" data-aos-delay="200">
                 <div class="card mx-auto my-2">
                     <img src="media/images/updates/up2.jpeg" class="card-img-top" alt="RSR Update 2">
                     <div class="card-body">
@@ -432,7 +435,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="col-md-3 h-100" data-aos="zoom-in" data-aos-delay="200">
                 <div class="card mx-auto my-2">
                     <img src="media/images/updates/up3.jpeg" class="card-img-top" alt="RSR Update 3">
                     <div class="card-body">
@@ -445,22 +448,11 @@
 
     <br>
 
-    <footer style="background-color: #E92730; color:white;" class="py-4">
-        <div class="container">
-            <div class="social-media text-center py-3">
-                <a href="https://www.facebook.com/redshiftracing.kjsce"><i
-                        class="fa fa-facebook-square fa-lg white-text fa-2x px-4 py-2"></i></a>
-                <a href="https://twitter.com/redshiftracing"><i
-                        class="fa fa-twitter fa-lg white-text fa-2x px-4 py-2"></i></a>
-                <a href="https://www.youtube.com/user/redshiftracing"><i
-                        class="fa fa-youtube-play fa-lg white-text fa-2x px-4 py-2"></i></a>
-                <a href="https://www.instagram.com/redshift_racing/"><i
-                        class="fa fa-instagram fa-lg white-text fa-2x px-4 py-2"></i></a>
-            </div>
-            <div class="footer-copyright text-center py-3">&copy; Copyright: Redshift Racing India 2019-20</a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+
+    <!--Optional Javacript-->
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/footer.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -1,11 +1,14 @@
 .bg-light {
-  background-color: #e92730 !important;
+  background-color: white !important;
 }
-
 .navbar {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 99;
+}
+
+#navigation hr {
+  position: absolute;
 }
 
 .navbar-brand {
@@ -14,8 +17,8 @@
 
 .navbar-light .navbar-nav .nav-link {
   font-size: 18px;
-  color: white;
-  border: 1.5px solid #e92730;
+  color: #e92730 !important;
+  border: 1.5px solid white !important;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -95,12 +98,12 @@
   color: white !important;
 }
 
-.active {
-  border-bottom: 1px solid white;
+.navbar-nav > .active {
+  border-bottom: 1px solid #e92730 !important;
 }
 
 @media only screen and (max-width: 991px) {
   .active {
-    border-bottom: none;
+    border-bottom: none !important;
   }
 }

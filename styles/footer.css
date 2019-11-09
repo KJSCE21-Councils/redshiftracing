@@ -1,30 +1,29 @@
-.social-media a i {
-    color: white;
-}
-
-.fa-facebook-square:hover {
+.fa-facebook-square {
     color: #1977F3;
     background-color: white;
     border-radius: 500px;
 }
 
-.fa-twitter:hover {
+.fa:hover {
+    font-size: 225%;    
+}
+
+.fa-twitter {
     color: #1BA1F5;
     background-color: white;
     border-radius: 500px;
 }
 
-.fa-youtube-play:hover {
+.fa-youtube-play {
     color: #c4302b;
     background-color: white;
     border-radius: 500px;
 }
 
-.fa-instagram:hover {
+.fa-instagram {
     background-color: white;
     border-radius: 500px;
-    color: rgba(197, 1, 223, 0.959);
-    /*background: -webkit-linear-gradient(top right, purple, orange);
+    background: -webkit-linear-gradient(top right, purple, orange);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
+    -webkit-text-fill-color: transparent;
 }

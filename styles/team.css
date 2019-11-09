@@ -3,7 +3,7 @@
 }
 
 .card {
-  border: 1px solid gray;
+  box-shadow: 0px 10px 20px -15px black;
 }
 
 .card h4 {
