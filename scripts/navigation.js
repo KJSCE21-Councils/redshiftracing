@@ -21,7 +21,7 @@ document.getElementById("navigation").innerHTML =
     '</nav>' +
     '<hr class="bg-secondary" />';
 
-var rootWebsite = "http://127.0.0.1:5501/";
+var rootWebsite = "http://baijudodhia.github.io/redshiftracing/";
 var loc = window.location.href;
 if (loc == (rootWebsite + 'index.html')) {
     var element = document.getElementById("indexNav");
