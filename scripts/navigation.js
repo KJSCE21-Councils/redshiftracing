@@ -1,5 +1,5 @@
 document.getElementById("navigation").innerHTML =
-    '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom" style="z-index:99;">' +
+    '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom border-danger font-weight-normal text-uppercase" style="z-index:99;">' +
     '<div class="container">' +
     '<a class="navbar-brand" href="index.html" style="max-width:180px;">' +
     '<img src="media/images/rsr-logo.jpg" alt="Redshift Racing Logo" style="width:100%; height:auto;">' +
