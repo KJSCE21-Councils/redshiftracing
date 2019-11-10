@@ -13,27 +13,30 @@
   position: absolute;
 }
 
+.maps {
+  box-shadow: 0px 12px 20px -15px #b80000;
+}
+
 .contact_details p {
   padding: 0;
   margin: 0;
 }
 
-.col-sm-6 p {
-  margin: 1% 5%;
-}
-
-.col-sm-6 {
-  margin: 0;
-  padding: 2.5% 0;
+.card {
+  border: none;
 }
 
 .contacts {
-  border: 1.5px solid #e92730;
-  border-radius: 5px;
+  box-shadow: 0px 12px 20px -15px #b80000;
 }
 
-.card {
-  border: 1px solid gray;
+.contacts p {
+  padding: 5px;
+  margin:5px
+}
+
+form {
+  box-shadow: 0px 12px 20px -15px #b80000;
 }
 
 form p {
@@ -45,6 +48,7 @@ textarea {
   margin: 1% 2%;
   padding: 5px;
   width: 95%;
+  height:100px;
 }
 
 input {
