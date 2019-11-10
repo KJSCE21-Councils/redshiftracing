@@ -360,7 +360,7 @@
                     var xhttp11_12 = new XMLHttpRequest();
                     xhttp11_12.onreadystatechange = function () {
                         if (this.readyState == 4 && this.status == 200) {
-                            var response = JSON.parse(xhttp11_1.responseText);
+                            var response = JSON.parse(xhttp11_12.responseText);
                             var teams = response.team11_12;
                             for (var i = 0; i < teams.length; i++) {
                                 var n = "";
@@ -381,8 +381,8 @@
                             //document.write('<div class="card">'+n+'</div');
                         }
                     };
-                    xhttp11_1.open("GET", "json/teams.json", true);
-                    xhttp11_1.send();
+                    xhttp11_12.open("GET", "json/teams.json", true);
+                    xhttp11_12.send();
                 </script>
             </div>
         </div>
