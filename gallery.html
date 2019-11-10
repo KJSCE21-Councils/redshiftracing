@@ -48,7 +48,7 @@
     <br>
     <br>
 
-    <h1 class="py-4 m-0 text-center"><u>Redshift Gallery</u></h1>
+    <h1 class="py-3 m-0 text-center font-weight-light">Redshift Gallery</h1>
 
     <!-- <div class="container">
         <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=redshiftracing" width="100%"
@@ -57,7 +57,7 @@
 
     <br>
 
-    <div class="container text-center justify-content-center" id="gallery">
+    <div class="container-fluid text-center justify-content-center" id="gallery">
         <div class="row" id="galleryInner">
         </div>
         <script>
@@ -68,8 +68,8 @@
                     var gallery = response.gallerys;
                     for (var i = 0; i < gallery.length; i++) {
                         console.log(gallery[i].image);
-                        document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4" data-aos="zoom-in" data-aos-delay="100"><div class="card">' +
-                            '<img class="card-img-top" src="media/images/rsr/' + gallery[i].image + '" alt="RSR' + (i+1) + '"/>' +
+                        document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4 p-1" data-aos="zoom-in" data-aos-delay="100"><div class="border-0 w-100 h-100">' +
+                            '<img class="img-fluid w-100 h-100" src="media/images/rsr/' + gallery[i].image + '" alt="RSR' + (i + 1) + '"/>' +
                             '</div></div>';
                     }
                 }

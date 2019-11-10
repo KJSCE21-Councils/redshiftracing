@@ -1,6 +1,5 @@
-document.getElementById("footer").innerHTML = '<footer class="py-3">' +
-    '<hr class="bg-secondary container"s />' +
-    '<div class="container">' +
+document.getElementById("footer").innerHTML = '<footer class="py-3 border-top border-secondary">' +
+    '<div class="wrapper">' +
     '<div class="social-media text-center py-2">' +
     '<a href="https://www.facebook.com/redshiftracing.kjsce ">' +
     '<i class="fa fa-facebook-square fa-lg fa-2x px-4 py-2 "></i></a>' +
