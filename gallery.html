@@ -73,7 +73,7 @@
                     for (var i = 0; i < gallery.length; i++) {
                         console.log(gallery[i].image);
                         document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4">' +
-                            '<img alt="picture" class="img-fluid w-100" data-aos="zoom-in" data-aos-delay="100" src="media/images/rsr/' + sponsor[i].logo + '" alt="rsr' + (i+1) + '"/>' +
+                            '<img class="img-fluid w-100" data-aos="zoom-in" data-aos-delay="100" src="media/images/rsr/' + gallery[i].image + '" alt="rsr' + (i+1) + '"/>' +
                             '</div>';
                     }
                 }
