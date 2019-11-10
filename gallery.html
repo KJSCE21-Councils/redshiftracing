@@ -61,6 +61,28 @@
 
     <br>
 
+    <div class="container text-center justify-content-center" id="gallery">
+        <div class="row" id="galleryInner">
+        </div>
+        <script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var response = JSON.parse(xhttp.responseText);
+                    var gallery = response.gallery;
+                    for (var i = 0; i < gallery.length; i++) {
+                        console.log(gallery[i].image);
+                        document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4">' +
+                            '<img alt="picture" class="img-fluid w-100" data-aos="zoom-in" data-aos-delay="100" src="media/images/rsr/' + sponsor[i].logo + '" alt="rsr' + (i+1) + '"/>' +
+                            '</div>';
+                    }
+                }
+            };
+            xhttp.open("GET", "json/gallery.json", true);
+            xhttp.send();
+        </script>
+    </div>
+
     <section class="container-fluid text-center justify-content-center" id="gallery">
         <div class="row">
             <div class="col-sm-4">
