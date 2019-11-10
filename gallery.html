@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,44 +21,41 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <!-- External Fonts CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet" />
 
     <!-- Animation on Scroll CSS -->
-    <link href="styles/aos.css" rel="stylesheet">
+    <link href="styles/aos.css" rel="stylesheet" />
 
     <!-- Other CSS-->
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/gallery.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/owl.carousel.min.css">
-    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/owl.carousel.min.css" />
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css" />
 </head>
 
 <body>
-
     <header id="navigation"></header>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
 
     <h1 class="py-3 m-0 text-center font-weight-light">Redshift Gallery</h1>
 
-    <!-- <div class="container">
+    <div class="container">
         <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=redshiftracing" width="100%"
             height="500px" autoplay="true"></iframe>
-    </div> -->
+    </div>
 
     <div class="container-fluid text-center justify-content-center" id="gallery">
-        <div class="row" id="galleryInner">
-        </div>
+        <div class="row" id="galleryInner"></div>
         <script>
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
@@ -67,9 +64,14 @@
                     var gallery = response.gallerys;
                     for (var i = 0; i < gallery.length; i++) {
                         console.log(gallery[i].image);
-                        document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4 p-1" data-aos="zoom-in" data-aos-delay="100"><div class="border-0 w-100 h-100">' +
-                            '<img class="img-fluid w-100 h-100" src="media/images/rsr/' + gallery[i].image + '" alt="RSR' + (i + 1) + '"/>' +
-                            '</div></div>';
+                        document.getElementById("galleryInner").innerHTML +=
+                            '<div class="col-sm-4 p-1" data-aos="zoom-in" data-aos-delay="100"><div class="border-0 w-100 h-100">' +
+                            '<img class="img-fluid w-100 h-100" src="media/images/rsr/' +
+                            gallery[i].image +
+                            '" alt="RSR' +
+                            (i + 1) +
+                            '"/>' +
+                            "</div></div>";
                     }
                 }
             };
@@ -105,7 +107,6 @@
     <script src="scripts/owl.carousel.js"></script>
     <script src="scripts/owl.carousel.min.js"></script>
     <script src="scripts/gallery.js"></script>
-
 </body>
 
 </html>

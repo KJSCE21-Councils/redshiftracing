@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,75 +20,36 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <!-- External Fonts CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet" />
 
     <!-- Animation on Scroll CSS -->
-    <link href="styles/aos.css" rel="stylesheet">
+    <link href="styles/aos.css" rel="stylesheet" />
 
     <!-- Other CSS-->
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/sponsors.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/global.css">
-
-    <!-- Scripts-->
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/sponsors.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/global.css" />
 </head>
 
 <body>
-
-    <!--<header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index:99;">
-            <div class="container">
-                <a class="navbar-brand" href="sponsors.html" style="max-width:180px;">
-                    <img src="media/images/rsr-logo.jpg" alt="Redshift Racing Logo" style="width:100%; height:auto;">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="sponsors.html">Sponsors
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="team.html">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header> -->
-
     <header id="navigation"></header>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <h1 class="py-3 m-0 text-center font-weight-light">Sponsors &amp; Partners</h1>
+    <h1 class="py-3 m-0 text-center font-weight-light">
+        Sponsors &amp; Partners
+    </h1>
 
     <div class="container text-center justify-content-center" id="sponsors">
-        <div class="row" id="sponsorsInner">
-        </div>
+        <div class="row" id="sponsorsInner"></div>
         <script>
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
@@ -98,9 +59,14 @@
                     for (var i = 0; i < sponsor.length; i++) {
                         console.log(sponsor[i].logo);
                         console.log(sponsor[i].name);
-                        document.getElementById("sponsorsInner").innerHTML += '<div class="col-sm-3" data-aos="zoom-in-up" data-aos-delay="100"><div class="card">' +
-                            '<img class="card-img-top" src="media/images/sponsors/' + sponsor[i].logo + '" alt="' + sponsor[i].name + '"/>' +
-                            '</div></div>';
+                        document.getElementById("sponsorsInner").innerHTML +=
+                            '<div class="col-sm-3" data-aos="zoom-in-up" data-aos-delay="100"><div class="card">' +
+                            '<img class="card-img-top" src="media/images/sponsors/' +
+                            sponsor[i].logo +
+                            '" alt="' +
+                            sponsor[i].name +
+                            '"/>' +
+                            "</div></div>";
                     }
                 }
             };
@@ -109,17 +75,16 @@
         </script>
     </div>
 
-
     <!-- Hover makes button white, but on clicking it becomes blue, figure this out-->
     <section class="sponsor_proposal container text-center">
         <form method="GET" target="_blank" action="media/RSR_Brochure.pdf">
-            <input type="submit" class="btn btn-info btn-lg" value="Why sponsor us ?">
+            <input type="submit" class="btn btn-info btn-lg" value="Why sponsor us ?" />
         </form>
-        <br>
+        <br />
         <form method="GET" target="_blank" action="https://forms.gle/kRiknWfjyaVTqTvj7">
-            <input type="submit" class="btn btn-info btn-lg" value="Contribute to RSR">
+            <input type="submit" class="btn btn-info btn-lg" value="Contribute to RSR" />
         </form>
-        <br>
+        <br />
     </section>
 
     <div id="footer"></div>
@@ -144,7 +109,6 @@
     <script>
         AOS.init();
     </script>
-
 </body>
 
 </html>
