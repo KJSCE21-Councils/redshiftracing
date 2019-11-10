@@ -68,9 +68,9 @@
                     var gallery = response.gallerys;
                     for (var i = 0; i < gallery.length; i++) {
                         console.log(gallery[i].image);
-                        document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4">' +
-                            '<img src="media/images/rsr/' + gallery[i].image + '" class="img-fluid w-100" data-aos="zoom-in" data-aos-delay="100" alt="rsr' + (i + 1) + '"/>' +
-                            '</div>';
+                        document.getElementById("galleryInner").innerHTML += '<div class="col-sm-4" data-aos="zoom-in" data-aos-delay="100"><div class="card">' +
+                            '<img class="card-img-top" src="media/images/rsr/' + sponsor[i].logo + '" alt="RSR' + (i+1) + '"/>' +
+                            '</div></div>';
                     }
                 }
             };
