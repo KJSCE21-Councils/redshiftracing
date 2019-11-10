@@ -1,4 +1,4 @@
-document.getElementById("footer").innerHTML = '<footer class="py-3 border-top border-secondary">' +
+document.getElementById("footer").innerHTML = '<footer class="py-3 border-top border-danger border-secondary">' +
     '<div class="wrapper">' +
     '<div class="social-media text-center py-2">' +
     '<a href="https://www.facebook.com/redshiftracing.kjsce ">' +
