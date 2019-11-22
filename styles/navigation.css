@@ -1,10 +1,12 @@
 .bg-light {
   background-color: white !important;
 }
+
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 99;
+  box-shadow: 0px 3px 15px -10px #b80000;
 }
 
 #navigation hr {

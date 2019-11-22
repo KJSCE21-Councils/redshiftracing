@@ -1,4 +1,75 @@
 {
+    "team19_20": [
+        {
+            "designation": "Captain",
+            "names": [
+                "Aditya Purohit"
+            ]
+        },
+        {
+            "designation": "Technical Coordinator",
+            "names": [
+                "Yash Bhatt"
+            ]
+        },
+        {
+            "designation": "Drivers",
+            "names": [
+                "Aditya Purohit",
+                "Yash Bhatt"
+            ]
+        },
+        {
+            "designation": "Suspension & Steering",
+            "names": [
+                "Amit Petare",
+                "Rahul Sawant",
+                "Pranav Kunte",
+                "Ali Arsiwala",
+                "Husain Fidvi",
+                "Chetan Rane",
+                "Nijananol Sarawate",
+                "Varun Bhanarkar"
+            ]
+        },
+        {
+            "designation": "Transmission",
+            "names": [
+                "Shitija Shetty",
+                "Yash Nadagire",
+                "Yash Bhatt",
+                "Parth Shah",
+                "Akash Patel"
+            ]
+        },
+        {
+            "designation": "Brakes",
+            "names": [
+                "Ashish Maurya",
+                "Mihir Patil",
+                "Sumukh Dedhia",
+                "Rohith Augustine",
+                "Rushabh Vora",
+                "Erwin Joseph"
+            ]
+        },
+        {
+            "designation": "Chassis",
+            "names": [
+                "Gopesh Chilvari",
+                "Viral Chedda",
+                "Richie Mathew",
+                "Varun Bhanarkar"
+            ]
+        },
+        {
+            "designation": "Marketing & Administration",
+            "names": [
+                "Aditya Purohit",
+                "Chaitanya Sheth"
+            ]
+        }
+    ],
     "team18_19": [
         {
             "designation": "Captain",

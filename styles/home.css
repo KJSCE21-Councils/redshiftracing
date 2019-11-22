@@ -283,6 +283,20 @@ header .overlay {
   left: -12px;
 }
 
+#print-cards .card {
+  box-shadow: none;
+  background-image: linear-gradient(
+    to top right,
+    lightgray,
+    rgb(160, 160, 160)
+  );
+  border: none;
+}
+
+#print-cards .btn {
+  box-shadow: 0px 10px 20px -12px #b80000;
+}
+
 @media (max-width: 767px) {
   ul.timeline:before {
     left: 40px;
