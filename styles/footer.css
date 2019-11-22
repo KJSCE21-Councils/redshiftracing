@@ -1,34 +1,30 @@
 footer {
-    box-shadow: 0px -3px 15px -10px #b80000;
-    margin-top:10px;
+  box-shadow: 0px -3px 15px -10px #b80000;
+  margin-top: 10px;
 }
 
 .fa-facebook-square {
-    color: #1977F3;
-    background-color: white;
-    border-radius: 500px;
+  color: #1977f3;
+  border-radius: 500px;
 }
 
 .fa:hover {
-    font-size: 225%;    
+  font-size: 225%;
 }
 
 .fa-twitter {
-    color: #1BA1F5;
-    background-color: white;
-    border-radius: 500px;
+  color: #1ba1f5;
+  border-radius: 500px;
 }
 
 .fa-youtube-play {
-    color: #c4302b;
-    background-color: white;
-    border-radius: 500px;
+  color: #c4302b;
+  border-radius: 500px;
 }
 
 .fa-instagram {
-    background-color: white;
-    border-radius: 500px;
-    background: -webkit-linear-gradient(top right, purple, orange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  border-radius: 500px;
+  background: -webkit-linear-gradient(top right, purple, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
