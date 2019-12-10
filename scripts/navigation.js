@@ -7,15 +7,22 @@ document.getElementById("navigation").innerHTML =
     '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">' +
     '<span class="navbar-toggler-icon"></span>' +
     '</button>' +
-    '<div class="collapse navbar-collapse" id="navbarResponsive">' +
-    '<ul class="navbar-nav ml-auto">' +
-    '<li id="indexNav" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>' +
-    '<li id="sponsorsNav" class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>' +
-    '<li id="galleryNav" class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>' +
-    '<li id="teamNav" class="nav-item"><a class="nav-link" href="team.html">Team</a></li>' +
-    '<li id="contactNav" class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>' +
-    '<br>' +
+    '<div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">' +
+    '<ul class="navbar-nav mx-auto justify-content-center text-center">' +
+    '<li id="indexNav" class="nav-item"><a class="nav-link text-left" href="index.html">Home</a></li>' +
+    '<li id="sponsorsNav" class="nav-item"><a class="nav-link text-left" href="sponsors.html">Sponsors</a></li>' +
+    '<li id="galleryNav" class="nav-item"><a class="nav-link text-left" href="gallery.html">Gallery</a></li>' +
+    '<li id="teamNav" class="nav-item"><a class="nav-link text-left" href="team.html">Team</a></li>' +
+    '<li id="contactNav" class="nav-item"><a class="nav-link text-left" href="contact.html">Contact</a></li>' +
     '</ul>' +
+    '<div class="justify-content-center text-center">' +
+    '<a class="navbar-brand px-2" href="index.html" style="max-width:75px;">' +
+    '<img src="media/images/logos/SVV_Logo.png" alt="Somaiya Vidyavihar" style="width:100%; height:auto;">' +
+    '</a>' +
+    '<a class="navbar-brand px-2" href="index.html" style="max-width:90px;">' +
+    '<img src="media/images/logos/SomaiyaTrust_Logo.jpg" alt="Somaiya Trust" style="width:100%; height:auto;">' +
+    '</a>' +
+    '</div>' +
     '</div>' +
     '</div>' +
     '</nav>' +
