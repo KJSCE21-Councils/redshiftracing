@@ -16,10 +16,10 @@ document.getElementById("navigation").innerHTML =
     '<li id="contactNav" class="nav-item"><a class="nav-link text-left" href="contact.html">Contact</a></li>' +
     '</ul>' +
     '<div class="justify-content-center text-center">' +
-    '<a class="navbar-brand px-2" href="index.html" style="max-width:75px;">' +
+    '<a class="navbar-brand px-2" href="https://svv.somaiya.edu/en" style="max-width:75px;">' +
     '<img src="media/images/logos/SVV_Logo.png" alt="Somaiya Vidyavihar" style="width:100%; height:auto;">' +
     '</a>' +
-    '<a class="navbar-brand px-2" href="index.html" style="max-width:90px;">' +
+    '<a class="navbar-brand px-2" href="https://svv.somaiya.edu/en" style="max-width:90px;">' +
     '<img src="media/images/logos/SomaiyaTrust_Logo.jpg" alt="Somaiya Trust" style="width:100%; height:auto;">' +
     '</a>' +
     '</div>' +
