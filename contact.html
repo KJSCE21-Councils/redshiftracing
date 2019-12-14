@@ -43,7 +43,7 @@
     <br />
     <br />
 
-    <div class="container justify-content-center text-center align items center">
+    <div class="container justify-content-center text-center align items center my-3">
         <div class="card p-2 contacts border rounded my-5 mx-auto">
             <h1 class="text-center py-1 my-1 font-weight-normal border-bottom">
                 Contact us
@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <div class="container justify-content-center text-center align items center">
+    <div class="container justify-content-center text-center align items center my-3" id="writetous">
         <div class="card border rounded maps my-5">
             <h1 class="text-center py-1 my-1 font-weight-normal border-bottom">
                 Reach us
@@ -81,36 +81,62 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container my-3">
         <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXf4cIDEFDTifxRkIa5xD4CyX_wAX6Fl2Jfw6YVU-llw84Jg/viewform?embedded=true" width="100%" height="587px" frameborder="0" marginheight="5px" marginwidth="5px">Loading…</iframe> -->
-        <form action="" class="card border rounded my-3 p-2">
+        <script type="text/javascript">var submitted = false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="
+                if(submitted)  {
+                    window.location='thankyou.html';
+                }">
+        </iframe>
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9uTjB0Eyu8j0fdCq-qEwJwH9hSqGAxqfTjspVy1XT-8QOiA/formResponse"
+            class="card border rounded my-3 p-2" id="contactform" method="post" target="hidden_iframe"
+            onsubmit="submitted=true;">
             <h1 class="text-center py-1 my-1 font-weight-normal border-bottom">
                 Write to us
             </h1>
             <div>
                 <p>Email</p>
-                <input class="col2 first" type="email" placeholder="Your email" />
+                <input class="col2 first" type="email" placeholder="Your email" name="entry.1654969963" />
             </div>
             <div>
                 <p>Name</p>
-                <input class="col2 first" type="text" placeholder="Your name" />
+                <input class="col2 first" type="text" placeholder="Your name" name="entry.410653865" />
             </div>
             <div>
                 <p>Contact Number</p>
-                <input class="col2 first" type="tel" placeholder="Your contact no." />
+                <input class="col2 first" type="tel" placeholder="Your contact no." name="entry.930239921" />
             </div>
             <div>
                 <p>Subject</p>
-                <input class="col2 first" type="text" placeholder="Message subject.." />
+                <input class="col2 first" type="text" placeholder="Message subject.." name="entry.1017507345" />
             </div>
             <div>
                 <p>Message</p>
-                <textarea name="textarea" placeholder="Your message here..." height="50"></textarea>
+                <textarea placeholder="Your message here..." height="50" name="entry.709352267"></textarea>
             </div>
             <div class="text-center p-2">
-                <button class="submit w-25 border rounded">Send Message</button>
+                <button class="submit w-25 border rounded" type="submit" id="submit-form">Send Message</button>
             </div>
         </form>
+        <!-- <script>
+            var $form;
+            $form = $('#contactform'),
+                url = 'https://script.google.com/a/somaiya.edu/macros/s/AKfycbzK6DNasN8BksF6bB6ekvmpmB9lG8qrxIVxMasjTIwk03L5Lds/exec'
+
+            $('#submit-form').on('click', function (e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                }).success(
+                    // do something
+                );
+            })
+        </script> -->
         <br />
         <br />
     </div>
