@@ -369,3 +369,9 @@ header .overlay {
     width: 100% !important;
   }
 }
+
+@media (max-width: 991px) {
+    .container {
+      width: 100% !important;
+    }
+}
