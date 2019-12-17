@@ -19,6 +19,13 @@
             ]
         },
         {
+            "designation": "Drivers",
+            "names": [
+                "Kaushal Wattamwar",
+                "Saurabh Jain"
+            ]
+        },
+        {
             "designation": "Chassis",
             "names": [
                 "Saurabh Jain (Head)",
@@ -101,13 +108,14 @@
         {
             "designation": "Drivers",
             "names": [
-                "Ali Arsiwala"
+                "Ali Arsiwala",
+                "Husain Fidvi"
             ]
         },
         {
             "designation": "Suspension & Steering",
             "names": [
-                "Ali Arsiwala (Head)", 
+                "Ali Arsiwala (Head)",
                 "Chetan Rane (Head)",
                 "Nijanand Sarawate",
                 "Chirag Parasia",
