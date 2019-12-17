@@ -19,10 +19,38 @@
             ]
         },
         {
+            "designation": "Chassis",
+            "names": [
+                "Saurabh Jain (Head)",
+                "Vinay Jain",
+                "Tirth Jhaveri",
+                "Yash Navsarikar",
+                "Kruthika Gangaraju",
+                "Roosheet Mehta",
+                "Sarthak Vora",
+                "Nihar Merchant",
+                "Junaidali Irfan Surti"
+            ]
+        },
+        {
+            "designation": "Transmission",
+            "names": [
+                "Harsh Savla (Head)",
+                "Ankit Chhajed",
+                "Akshay Patel",
+                "Devansh Dedhia",
+                "Hitansh S. Mehta",
+                "Tejas R Jain",
+                "Rhythm Shah"
+            ]
+        },
+        {
             "designation": "Suspension & Steering",
             "names": [
                 "Chirag Parasia (Suspension Head)",
                 "Archit Furia (Steering Head)",
+                "Jay Shah",
+                "Kevalya Dhami",
                 "Yash Chandarana",
                 "Dhruv Jain",
                 "Tejas Patil",
@@ -31,41 +59,14 @@
             ]
         },
         {
-            "designation": "Transmission",
-            "names": [
-                "Harsh Savla (Head)",
-                "Ankit Chhajed",
-                "Tejas R Jain",
-                "Aniket Yadav",
-                "Hitansh S. Mehta",
-                "Devansh Dedhia",
-                "Akshay Patel",
-                "Rhythm Shah"
-            ]
-        },
-        {
             "designation": "Brakes",
             "names": [
                 "Suraj Gandhi (Head)",
+                "Mitesh Butala",
                 "Aayush Jay Gujrathi",
                 "Prasad Borkar",
                 "Sameeksha Poojary",
-                "Nupoor Panchal",
-                "Mitesh Butala"
-            ]
-        },
-        {
-            "designation": "Chassis",
-            "names": [
-                "Saurabh Jain (Head)",
-                "Vinay Jain",
-                "Tirth Jhaveri",
-                "Yash Navsarikar",
-                "Roosheet Mehta",
-                "Sarthak Vora",
-                "Nihar Merchant",
-                "Junaidali Irfan Surti",
-                "Kruthika Gangaraju"
+                "Nupoor Panchal"
             ]
         },
         {
@@ -73,7 +74,8 @@
             "names": [
                 "Swetha Chiliveri",
                 "Dhvanit H Bhimani",
-                "Prathmesh Bojalwar"
+                "Prathmesh Bojalwar",
+                "Siddhi Mali"
             ]
         }
     ],
@@ -105,51 +107,55 @@
         {
             "designation": "Suspension & Steering",
             "names": [
-                "Amit Petare",
-                "Rahul Sawant",
-                "Pranav Kunte",
-                "Ali Arsiwala",
-                "Husain Fidvi",
-                "Chetan Rane",
-                "Nijananol Sarawate",
-                "Varun Bhanarkar"
+                "Ali Arsiwala (Head)" 
+                "Chetan Rane (Head)",
+                "Nijanand Sarawate",
+                "Chirag Parasia",
+                "Archit Furia",
+                "Kiran Karkera",
+                "Jay Shah",
+                "Kevalya Dhami"
             ]
         },
         {
             "designation": "Transmission",
             "names": [
-                "Shitija Shetty",
-                "Yash Nadagire",
-                "Yash Bhatt",
-                "Parth Shah",
-                "Akash Patel"
+                "Akash Anghan",
+                "Sumukh Dedhia",
+                "Kaushal Wattamwar",
+                "Harsh Savla",
+                "Ankit Chhajed",
+                "Akshay Patel",
+                "Harshal Dharani"
             ]
         },
         {
             "designation": "Brakes",
             "names": [
-                "Ashish Maurya",
-                "Mihir Patil",
-                "Sumukh Dedhia",
-                "Rohith Augustine",
-                "Rushabh Vora",
-                "Erwin Joseph"
+                "Rohit Augustine (Head)",
+                "Erwin Joseph",
+                "Rushabh Shah",
+                "Atharva Ghaisas",
+                "Suraj Gandhi"
             ]
         },
         {
             "designation": "Chassis",
             "names": [
-                "Gopesh Chilvari",
-                "Viral Chedda",
+                "Viral Chheda (head)",
+                "Varun Bhanarkar",
                 "Richie Mathew",
-                "Varun Bhanarkar"
+                "Chaitanya Sonalkar",
+                "Saurabh Jain",
+                "Vinay Jain",
+                "Tirth Jhaveri"
             ]
         },
         {
             "designation": "Marketing & Administration",
             "names": [
-                "Aditya Purohit",
-                "Chaitanya Sheth"
+                "Fatema Motiwala",
+                "Kaizer Mogul"
             ]
         }
     ],
