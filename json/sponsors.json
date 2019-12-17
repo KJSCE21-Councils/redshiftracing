@@ -25,6 +25,14 @@
             "name": "Veedol"
         },
         {
+            "logo": "PPImpex.jpg",
+            "name": "P. P. Impex"
+        },
+        {
+            "logo": "Malkar.jpg",
+            "name": "Malkar Industries"
+        },
+        {
             "logo": "SolidWorks.jpg",
             "name": "SolidWorks"
         },
@@ -79,10 +87,6 @@
         {
             "logo": "NKGSB Bank.jpg",
             "name": "NKGSB Bank"
-        },
-        {
-            "logo": "Malkar.jpg",
-            "name": "Malkar Industries"
         },
         {
             "logo": "Purohit.jpg",
