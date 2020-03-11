@@ -46,6 +46,49 @@
         <video playsinline="playsinline" autoplay="autoplay" loop="loop" style="height:100%;">
             <source src="./media/videos/redshift-cf.mp4" type="video/mp4" />
         </video>
+        <style>
+            .crowdfunding-btn {
+                width: 100% !important;
+                justify-content: center;
+            }
+
+            .crowdfunding-btn button {
+                position: fixed;
+                width: 100%;
+                max-width: 200px;
+                bottom: 5%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                border: 0;
+                margin: 0;
+                padding: 5px;
+                background-color: #141414;
+                animation: cf 1s infinite;
+                border-radius: 20px;
+                border: 3px solid transparent;
+                box-shadow: 0px 0px 20px -5px #b80000;
+                color: whitesmoke;
+                outline: 0;
+                z-index: 1000;
+                text-align: center;
+            }
+
+            @keyframes cf {
+
+                0%,
+                100% {
+                    border: 3px solid #b80000;
+                }
+
+                50% {
+                    border: 3px solid transparent;
+                }
+            }
+
+            .crowdfunding-btn button:hover {
+                box-shadow: 0 0 20px -5px #b80000;
+            }
+        </style>
         <div class="crowdfunding-btn">
             <form action="https://www.ketto.org/teamredshiftracingindia" target="_blank">
                 <button type="submit"><span>Crowdfunding is LIVE &#8599;</span></button>
