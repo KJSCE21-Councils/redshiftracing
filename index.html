@@ -43,9 +43,23 @@
     <header>
         <div id="navigation"></div>
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="height:100%;">
-            <source src="./media/videos/rsr.mp4" type="video/mp4" />
+        <script>
+            var ismuted = true;
+            if(ismuted === true) {
+                document.getElementsByTagName("video").muted = true;
+            }
+            else {
+                document.getElementsByTagName("video").muted = false;
+            }
+        </script>
+        <video playsinline="playsinline" autoplay="autoplay" loop="loop" style="height:100%;">
+            <source src="./media/videos/redshift-cf.mp4" type="video/mp4" />
         </video>
+        <div class="crowdfunding-btn">
+            <form action="https://www.ketto.org/teamredshiftracingindia" target="_blank">
+                <button type="submit"><span>Crowdfunding is LIVE &#8599;</span></button>
+            </form>
+        </div>
     </header>
 
     <section class="container-fluid py-2 font-weight-normal" id="about">
@@ -458,7 +472,8 @@
             </div>
             <div class="col-md-4 my-2" data-aos="zoom-in">
                 <div class="card mx-auto my-2 h-100">
-                    <img src="./media/images/updates/Abhiyantriki2019.jpg" class="card-img-top" alt="Abhiyantriki 2019" />
+                    <img src="./media/images/updates/Abhiyantriki2019.jpg" class="card-img-top"
+                        alt="Abhiyantriki 2019" />
                     <div class="card-body">
                         <p class="card-text">
                             RedShift Racing India at Abhiyantriki 2019
