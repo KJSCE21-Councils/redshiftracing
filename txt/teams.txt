@@ -84,6 +84,12 @@
                 "Prathmesh Bojalwar",
                 "Siddhi Mali"
             ]
+        },
+        {
+            "designation": "Website Admin",
+            "names": [
+                "Baiju Dodhia"
+            ]
         }
     ],
     "team18_19": [
