@@ -14,6 +14,10 @@
   text-decoration: underline;
 }
 
+.nav {
+  justify-content: center;
+}
+
 .nav-tabs a {
   font-size: 18px;
 }
@@ -56,6 +60,12 @@ ul.nav-tabs::-webkit-scrollbar {
 
 .img-fluid {
   width: 100%;
+}
+
+@media only screen and (max-width: 1233px) {
+  .nav {
+    justify-content: left;
+  }
 }
 
 @media only screen and (max-width: 1025px) {
