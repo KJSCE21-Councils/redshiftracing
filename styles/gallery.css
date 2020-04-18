@@ -6,21 +6,16 @@
   justify-content: center;
   text-align: center;
 }
-
 .row {
   justify-content: center;
   text-align: center;
 }
-
 #gallery-title {
   text-align: center;
 }
-
 .img-fluid {
   filter: brightness(0.5);
 }
-
 .img-fluid:hover {
   filter: brightness(1);
 }
-

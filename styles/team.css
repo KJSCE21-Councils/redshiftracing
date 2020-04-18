@@ -1,37 +1,28 @@
 .col-sm-4 {
   padding: 0;
 }
-
 .card {
-  box-shadow: 0px 10px 10px -10px lightgray;
+  box-shadow: 0 10px 10px -10px lightgray;
   background-color: rgb(255, 250, 250);
-  /* background-image: linear-gradient(to top right, lightgray, lightgray); */
-  /* background-image: linear-gradient(to top right, lightgray, rgb(160, 160, 160); */
   border: 1px solid lightgray;
 }
-
 .card h4 {
   text-decoration: underline;
 }
-
 .nav {
   justify-content: center;
 }
-
 .nav-tabs a {
   font-size: 18px;
 }
-
 .nav-tabs {
   margin-bottom: 10px;
   padding-bottom: 5px;
   border: none;
 }
-
 .nav-tabs .nav-link {
   color: black;
 }
-
 .tabbed-navigation .nav-link {
   color: black !important;
 }
@@ -41,7 +32,6 @@
 .tabbed-navigation .nav-link.active {
   color: red !important;
 }
-
 ul.nav-tabs {
   overflow-x: auto;
   overflow-y: hidden;
@@ -49,31 +39,25 @@ ul.nav-tabs {
   display: flex;
   flex-wrap: nowrap;
 }
-
 ul.nav-tabs li {
   display: inline-block;
 }
-
 ul.nav-tabs::-webkit-scrollbar {
   height: 1px;
 }
-
 .img-fluid {
   width: 100%;
 }
-
 @media only screen and (max-width: 1233px) {
   .nav {
     justify-content: left;
   }
 }
-
 @media only screen and (max-width: 1025px) {
   #teams-content-main {
     width: 75% !important;
   }
 }
-
 @media only screen and (max-width: 426px) {
   #teams-content-main {
     width: 100% !important;
