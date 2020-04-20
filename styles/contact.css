@@ -12,7 +12,12 @@
   position: absolute;
 }
 .maps {
-  box-shadow: 0 12px 20px -15px #b80000;
+  /* box-shadow: 0 12px 20px -15px #b80000; */
+  border: none;
+  background-color: #f9f9f9;
+  filter: drop-shadow(8px 8px 10px rgba(255, 0, 0, 0.1))
+    drop-shadow(-10px -10px 20px rgba(255, 255, 255, 1))
+    drop-shadow(1px 1px 0.5px rgba(255, 0, 0, 0.05));
 }
 .contact_details p {
   padding: 0;
@@ -22,14 +27,24 @@
   border: none;
 }
 .contacts {
-  box-shadow: 0 12px 20px -15px #b80000;
+  /* box-shadow: 0 12px 20px -15px #b80000; */
+  border: none;
+  background-color: #f9f9f9;
+  filter: drop-shadow(8px 8px 10px rgba(255, 0, 0, 0.1))
+    drop-shadow(-10px -10px 20px rgba(255, 255, 255, 1))
+    drop-shadow(1px 1px 0.5px rgba(255, 0, 0, 0.05));
 }
 .contacts p {
   padding: 5px;
   margin: 5px;
 }
 form {
-  box-shadow: 0 12px 20px -15px #b80000;
+  /* box-shadow: 0 12px 20px -15px #b80000; */
+  border: none;
+  background-color: #f9f9f9;
+  filter: drop-shadow(8px 8px 10px rgba(255, 0, 0, 0.1))
+    drop-shadow(-10px -10px 20px rgba(255, 255, 255, 1))
+    drop-shadow(1px 1px 0.5px rgba(255, 0, 0, 0.05));
 }
 form p {
   color: black;

@@ -63,10 +63,12 @@
                 margin: 0 !important;
                 padding: 5px !important;
                 background-color: #b80000 !important;
-                animation: cf 1s infinite !important;
+                animation-name: cf !important;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
                 border-radius: 20px !important;
                 border: 3px solid transparent !important;
-                box-shadow: 0px 0px 20px -5px #b80000 !important;
+                /* box-shadow: 0px 0px 20px -5px #b80000 !important; */
                 color: whitesmoke !important;
                 outline: 0 !important;
                 z-index: 1000 !important;
@@ -77,11 +79,11 @@
 
                 0%,
                 100% {
-                    border: 3px solid #b80000 !important;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0);
                 }
 
                 50% {
-                    border: 3px solid transparent !important;
+                    box-shadow: 0px 0px 15px 0px red;
                 }
             }
 
@@ -100,23 +102,23 @@
         <h1 class="py-3 text-center font-weight-normal" data-aos="fade-up">
             About Us
         </h1>
-        <div class="row justify-content-center">
+        <div class="row container m-0 justify-content-center">
             <div class="col-sm-5 m-2 p-3" id="mission" data-aos="fade-up" data-aos-delay="50">
                 <h2 class="font-weight-normal">Our Mission</h2>
-                <h4 class="font-weight-light">
-                    “Build an efficient single seater All terrain vehicle with an
-                    impeccable Design. Continuous Innovation, improvisation and
-                    optimization To achieve our goals through assiduous work.”
-                </h4>
+                <h5 class="font-weight-light">
+                    Build an efficient single seater All terrain vehicle with an impeccable Design. Continuous
+                    Innovation, improvisation and
+                    optimization To achieve our goals through assiduous work.
+                </h5>
             </div>
             <div class="col-sm-5 m-2 p-3" id="vision" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="font-weight-normal">Our Vision</h2>
-                <h4 class="font-weight-light">
-                    "Compete with the best engineering minds nationally and
+                <h2 class="font-weight-normal underline">Our Vision</h2>
+                <h5 class="font-weight-light">
+                    Compete with the best engineering minds nationally and
                     internationally . We believe ‘Manufacturing vehicles for all
                     terrain is much cheaper than building roads for rough terrains’.<br />
-                    “To aver that we are the best team among the elites.”
-                </h4>
+                    To aver that we are the best team among the elites.
+                </h5>
             </div>
         </div>
     </section>
@@ -382,7 +384,7 @@
             Press &amp; Media
         </h1>
         <div class="container font-weight-normal" id="print-cards">
-            <div class="owl-carousel" style="height:340px!important;">
+            <div class="owl-carousel" style="height:370px!important;">
                 <div class="owl row justify-content-center" data-aos="zoom-in" data-aos-delay="50">
                     <div class="col-md-4" data-aos="zoom-in" data-aos-delay="50">
                         <div class="card mx-auto my-2 h-100">
@@ -480,7 +482,7 @@
 
     <hr />
 
-    <div class="container" data-aos="zoom-in">
+    <div class="container" data-aos="zoom-in" id="updates">
         <h1 class="py-2 text-center font-weight-normal" data-aos="fade-up">
             Updates
         </h1>
