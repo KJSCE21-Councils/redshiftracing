@@ -48,6 +48,7 @@ footer {
 .fa-instagram {
   border-radius: 500px;
   background: -webkit-linear-gradient(top right, purple, orange);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
