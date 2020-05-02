@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   z-index: 99;
-  padding: 1px 16px;
+  padding: 0px 16px;
   box-shadow: 0 3px 15px -10px #b80000;
 }
 .navbar-light .navbar-toggler.collapsed {
@@ -15,7 +15,7 @@
   border: 0px !important;
 }
 #rsr-logo {
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 .nav-ul-list {
@@ -99,6 +99,10 @@
   border-bottom: 1px solid #e92730 !important;
 }
 @media only screen and (max-width: 991px) {
+  #rsr-logo {
+    width: 75%;
+    height: auto;
+  }
   #somaiya-logo {
     padding-bottom: 1%;
   }
@@ -114,7 +118,10 @@
 }
 @media only screen and (max-width: 767px) {
   .navbar {
-    padding: 2px 16px;
+    padding: 1px 16px;
+  }
+  .navbar-brand {
+    padding: 3px 0px;
   }
   #kjsce-logo {
     max-width: 40% !important;
