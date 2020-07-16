@@ -19,31 +19,28 @@
     <link rel="canonical" href="" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- External Fonts CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet" />
 
-    <!-- Animation on Scroll CSS -->
-    <link href="./styles/aos.css" rel="stylesheet" />
+    <!-- Tiny Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 
     <!-- Other CSS-->
     <link rel="stylesheet" href="./styles/navigation.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
 </head>
 
 <body>
 
     <header>
         <div id="navigation"></div>
-        <!-- <div class="overlay"></div> -->
-        <video id="rsr-video" playsinline="playsinline" autoplay="autoplay" muted loop="loop" controls style="height:100%;">
+        <div class="overlay"></div>
+        <video id="rsr-video" playsinline="playsinline" autoplay="autoplay" muted loop="loop" style="height:100%;">
             <source src="./media/videos/rsr.mp4" type="video/mp4" />
         </video>
         <!-- Script used to force play video in Chrome Data Saver Mode -->
@@ -56,74 +53,57 @@
         </script>
     </header>
 
-    <section class="container py-2 font-weight-normal w-75" id="about">
-        <h1 class="py-3 text-center font-weight-normal" data-aos="fade-up">
-            About Us
-        </h1>
-        <div class="row container m-0 justify-content-center">
-            <div class="col-sm-5 m-2 p-3" id="mission" data-aos="fade-up">
-                <h2 class="font-weight-normal">Our Mission</h2>
-                <h5 class="font-weight-light">
-                    Build an efficient single seater All terrain vehicle with an impeccable Design. Continuous
-                    Innovation, improvisation and
-                    optimization To achieve our goals through assiduous work.
-                </h5>
+    <section class="container">
+        <div class="h1 font-weight-normal text-center mt-3">About us</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card m-1 p-3" style="height:100%;">
+                    <div class="h2 font-weight-normal underline">Our Mission</div>
+                    <div class="h5 font-weight-light">
+                        Build an efficient single seater All terrain vehicle with an impeccable Design. Continuous
+                        Innovation, improvisation and
+                        optimization To achieve our goals through assiduous work.
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-5 m-2 p-3" id="vision" data-aos="fade-up">
-                <h2 class="font-weight-normal underline">Our Vision</h2>
-                <h5 class="font-weight-light">
-                    Compete with the best engineering minds nationally and
-                    internationally. We believe ‘‘Manufacturing vehicles for all
-                    terrain is much cheaper than building roads for rough terrains’’.<br />
-                    To aver that we are the best team among the elites.
-                </h5>
+            <div class="col-sm-6">
+                <div class="card m-1 p-3" style="height:100%;">
+                    <div class="h2 font-weight-normal underline">Our Vision</div>
+                    <div class="h5 font-weight-light">
+                        Compete with the best engineering minds nationally and
+                        internationally. We believe ‘‘Manufacturing vehicles for all
+                        terrain is much cheaper than building roads for rough terrains’’.<br />
+                        To aver that we are the best team among the elites.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <hr />
 
-    <!-- <div class="container w-75" id="press">
-        <div class="owl-carousel w-100" data-aos="zoom-in"  id="print-gallery"> -->
-    <div class="container justify-content-center" style="width:65%;">
-        <h1 class="py-2 text-center font-weight-normal" data-aos="fade-up">
-            Gallery
-        </h1>
-        <div class="owl-carousel w-100" data-aos="zoom-in">
-            <div class="item m-1">
-                <img src="./media/images/rsr/rsr18.jpeg" class="rounded" />
-            </div>
-            <div class="item m-1">
-                <img src="./media/images/rsr/rsr28.JPEG" class="rounded" />
-            </div>
-            <div class="item m-1">
-                <img src="./media/images/rsr/rsr27.JPEG" class="rounded" />
-            </div>
-            <div class="item m-1">
-                <img src="./media/images/rsr/rsr26.JPEG" class="rounded" />
-            </div>
-            <div class="item m-1">
-                <img src="./media/images/rsr/rsr25.JPEG" class="rounded" />
-            </div>
-            <div class="item m-1">
-                <img src="./media/images/rsr/rsr24.jpeg" class="rounded" />
-            </div>
+    <section class="container">
+        <div class="h1 font-weight-normal text-center mb-3">Gallery</div>
+        <div class="home-gallery">
+            <img src="./media/images/rsr/rsr18.jpeg" class="rounded" alt="Redshift Racing Photo 18" />
+            <img src="./media/images/rsr/rsr28.JPEG" class="rounded" alt="Redshift Racing Photo 28" />
+            <img src="./media/images/rsr/rsr27.JPEG" class="rounded" alt="Redshift Racing Photo 27" />
+            <img src="./media/images/rsr/rsr26.JPEG" class="rounded" alt="Redshift Racing Photo 26" />
+            <img src="./media/images/rsr/rsr25.JPEG" class="rounded" alt="Redshift Racing Photo 25" />
+            <img src="./media/images/rsr/rsr24.jpeg" class="rounded" alt="Redshift Racing Photo 24" />
         </div>
-    </div>
+    </section>
 
     <hr />
 
     <div class="container font-weight-normal">
-        <div class="page-header text-center">
-            <h1 class="font-weight-normal" id="timeline">Journey So Far</h1>
-        </div>
-        <br />
+        <div class="h1 font-weight-normal text-center mb-3">Journey So Far</div>
         <ul class="timeline">
             <li>
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-right">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/tabeer.jpeg" />
                     </div>
@@ -144,7 +124,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-left">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/yudhaan3.jpg" />
                     </div>
@@ -169,7 +149,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-right">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/yudhaan2.jpg" />
                     </div>
@@ -194,7 +174,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-left">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/yudhaan.jpg" />
                     </div>
@@ -216,7 +196,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-right">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/raudr3.jpg" />
                     </div>
@@ -242,7 +222,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-left">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/raudr2.jpg" />
                     </div>
@@ -275,7 +255,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-right">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/raudr.jpg" />
                     </div>
@@ -301,7 +281,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-left">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/blunderbuss.jpg" />
                     </div>
@@ -316,7 +296,7 @@
                 <div class="timeline-badge primary">
                     <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
                 </div>
-                <div class="timeline-panel" data-aos="fade-sright">
+                <div class="timeline-panel">
                     <div class="timeline-heading">
                         <img class="img-fluid w-100" src="./media/images/success/rsr11-12.jpg" />
                     </div>
@@ -337,115 +317,94 @@
     <br />
     <hr />
 
-    <div class="container justify-content-center" id="print">
-        <h1 class="py-2 text-center font-weight-normal" data-aos="fade-up">
-            Press &amp; Media
-        </h1>
-        <div class="container font-weight-normal" id="print-cards">
-            <div class="owl-carousel" style="height:370px!important;">
-                <div class="owl row justify-content-center" data-aos="zoom-in">
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="card mx-auto my-2 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Crank it!</h5>
-                                <p class="card-text font-weight-normal">
-                                    KJSCE-The “RAUDR II” recently participated in the Sasol Baja
-                                    2014 – a competition held in South Africa & organised by
-                                    Society of Automotive Engineers.
-                                </p>
-                                <a href="https://carbiketech.com/redshift-racing-fights-hard-sasol-baja-2014/"
-                                    class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
-                            </div>
-                        </div>
+    <section class="container">
+        <div class="h1 font-weight-normal text-center mb-3">Press &amp; Media</div>
+        <div class="home-story">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Crank it!</h5>
+                        <p class="card-text font-weight-normal">
+                            KJSCE-The “RAUDR II” recently participated in the Sasol Baja
+                            2014 – a competition held in South Africa & organised by
+                            Society of Automotive Engineers.
+                        </p>
+                        <a href="https://carbiketech.com/redshift-racing-fights-hard-sasol-baja-2014/"
+                            class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
                     </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="card mx-auto my-2 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Motoroids India</h5>
-                                <p class="card-text font-weight-normal">
-                                    At the SASOL BAJA 2014, the it was the only Indian team
-                                    amongst all other colleges to represent India in the
-                                    competition held in South Africa.
-                                </p>
-                                <a href="http://www.motoroids.com/news/team-red-shift-of-k-j-somaiya-college-of-engineering-showcases-their-atv-rauder/"
-                                    class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Motoroids India</h5>
+                        <p class="card-text font-weight-normal">
+                            At the SASOL BAJA 2014, the it was the only Indian team
+                            amongst all other colleges to represent India in the
+                            competition held in South Africa.
+                        </p>
+                        <a href="http://www.motoroids.com/news/team-red-shift-of-k-j-somaiya-college-of-engineering-showcases-their-atv-rauder/"
+                            class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
                     </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="card mx-auto my-2 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Car Trade</h5>
-                                <p class="card-text font-weight-normal">
-                                    This time around 25 brilliant student minds from KJ Somaiya
-                                    college have built an All-terrain vehicle that shall represent
-                                    India at the Sasol BAJA SAC 2014.
-                                </p>
-                                <a href="https://www.cartrade.com/news/india-s-all-terrain-car-outshines-in-sasol-baja-south-africa-challenge-2014-126211.html"
-                                    class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Trade</h5>
+                        <p class="card-text font-weight-normal">
+                            This time around 25 brilliant student minds from KJ Somaiya
+                            college have built an All-terrain vehicle that shall represent
+                            India at the Sasol BAJA SAC 2014.
+                        </p>
+                        <a href="https://www.cartrade.com/news/india-s-all-terrain-car-outshines-in-sasol-baja-south-africa-challenge-2014-126211.html"
+                            class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
                     </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="card mx-auto my-2 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Pocket News</h5>
-                                <p class="card-text font-weight-normal">
-                                    After consistently performing for 9 years,the students of KJ
-                                    Somaiya College of Engg unveiled their new prototype "RIGEL".
-                                </p>
-                                <a href="https://www.pocketnewsalert.com/search/label/KJ%20Somaiya%20College%20of%20Engineering?max-results=5"
-                                    class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pocket News</h5>
+                        <p class="card-text font-weight-normal">
+                            After consistently performing for 9 years,the students of KJ
+                            Somaiya College of Engg unveiled their new prototype "RIGEL".
+                        </p>
+                        <a href="https://www.pocketnewsalert.com/search/label/KJ%20Somaiya%20College%20of%20Engineering?max-results=5"
+                            class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
                     </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="card mx-auto my-2 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Solarnews</h5>
-                                <p class="card-text font-weight-normal">
-                                    Team Redshift of K J Somaiya College of Engineering
-                                    demonstrates the All Terrain Vehicle Raudr 2 in Mumbai, India
-                                    on March 19, 2015.
-                                </p>
-                                <a href="http://www.solarisimages.com/image_details.php?id=253989"
-                                    class="btn btn-danger" target="_blank">Complete Story &#8599;</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Solarnews</h5>
+                        <p class="card-text font-weight-normal">
+                            Team Redshift of K J Somaiya College of Engineering
+                            demonstrates the All Terrain Vehicle Raudr 2 in Mumbai, India
+                            on March 19, 2015.
+                        </p>
+                        <a href="http://www.solarisimages.com/image_details.php?id=253989" class="btn btn-danger"
+                            target="_blank">Complete Story &#8599;</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="container w-75" id="press">
-            <div class="owl-carousel w-100" data-aos="zoom-in" id="print-gallery">
-                <div class="item m-1">
-                    <img src="./media/images/press/press1.jpeg" />
-                </div>
-                <div class="item m-1">
-                    <img src="./media/images/press/press2.jpeg" />
-                </div>
-                <div class="item m-1">
-                    <img src="./media/images/press/press3.jpeg" />
-                </div>
-                <div class="item m-1">
-                    <img src="./media/images/press/press4.jpeg" />
-                </div>
-                <div class="item m-1">
-                    <img src="./media/images/press/press5.jpeg" />
-                </div>
-            </div>
+        <div class="home-press">
+            <img src="./media/images/press/press1.jpeg" class="rounded" alt="Redshift Racing Press Release 1" />
+            <img src="./media/images/press/press2.jpeg" class="rounded" alt="Redshift Racing Press Release 2" />
+            <img src="./media/images/press/press3.jpeg" class="rounded" alt="Redshift Racing Press Release 3" />
+            <img src="./media/images/press/press4.jpeg" class="rounded" alt="Redshift Racing Press Release 4" />
+            <img src="./media/images/press/press5.jpeg" class="rounded" alt="Redshift Racing Press Release 5" />
         </div>
-    </div>
+    </section>
 
     <hr />
 
-    <div class="container" data-aos="zoom-in" id="updates">
-        <h1 class="py-2 text-center font-weight-normal" data-aos="fade-up">
-            Updates
-        </h1>
+    <section class="container">
+        <div class="h1 font-weight-normal text-center mb-2">Updates</div>
         <div class="row justify-content-center">
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/JohnAbraham.jpg" class="card-img-top" alt="Mr. John Abraham" />
                     <div class="card-body">
@@ -455,7 +414,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/DNA_AutoFest.jpg" class="card-img-top" alt="DNA AutoFest 2019" />
                     <div class="card-body">
@@ -465,7 +424,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/Abhiyantriki2019.jpg" class="card-img-top"
                         alt="Abhiyantriki 2019" />
@@ -476,7 +435,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/MET_HCS.jpg" class="card-img-top" alt="MET HCS" />
                     <div class="card-body">
@@ -486,7 +445,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/up1.jpeg" class="card-img-top" alt="CM Devendra Fadnavis" />
                     <div class="card-body">
@@ -496,7 +455,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/up2.jpeg" class="card-img-top" alt="DNA Auto Show 2017" />
                     <div class="card-body">
@@ -506,7 +465,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-2" data-aos="zoom-in">
+            <div class="col-md-4 my-2">
                 <div class="card mx-auto my-2 h-100">
                     <img src="./media/images/updates/up3.jpeg" class="card-img-top" alt="Story of Makers by KVO" />
                     <div class="card-body">
@@ -518,57 +477,22 @@
             </div>
         </div>
         <br>
-    </div>
+    </section>
 
     <hr />
 
-    <div class="container justify-content-center" id="print">
-        <h1 class="py-2 text-center font-weight-normal" data-aos="fade-up">
-            Sponsors
-        </h1>
-        <br />
-        <div class="container font-weight-normal" id="print-cards">
-            <div class="owl-carousel" style="height:240px!important;">
-                <div class="owl-sponsor row justify-content-center" style="height:240px!important;" data-aos="zoom-in">
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/Hari-Om.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/Swastik-Lasers.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/MDDSCT.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/ScanTech.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/Veedol.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/Malkar.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in">
-                        <div class="item w-100">
-                            <img src="./media/images/sponsors/PPImpex.jpg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="container">
+        <div class="h1 font-weight-normal text-center mb-2">Sponsors</div>
+        <div class="home-sponsors">
+            <img src="./media/images/sponsors/Hari-Om.jpg" />
+            <img src="./media/images/sponsors/Swastik-Lasers.jpg" />
+            <img src="./media/images/sponsors/MDDSCT.jpg" />
+            <img src="./media/images/sponsors/ScanTech.jpg" />
+            <img src="./media/images/sponsors/Veedol.jpg" />
+            <img src="./media/images/sponsors/Malkar.jpg" />
+            <img src="./media/images/sponsors/PPImpex.jpg" />
         </div>
-    </div>
+    </section>
 
     <br />
     <br />
@@ -580,26 +504,20 @@
     <script src="./scripts/footer.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-    <!-- Animation on Scroll JS -->
-    <script src="./scripts/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- Owl Carousel -->
-    <script src="./scripts/owl.carousel.js"></script>
-    <script src="./scripts/owl.carousel.min.js"></script>
+    <!-- Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./scripts/home.js"></script>
+
 </body>
 
 </html>

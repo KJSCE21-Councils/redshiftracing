@@ -20,42 +20,44 @@
     <link rel="canonical" href="" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- External Fonts CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet" />
 
-    <!-- Animation on Scroll CSS -->
-    <link href="./styles/aos.css" rel="stylesheet" />
+    <!-- External Gallery CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <!-- Other CSS-->
     <link rel="stylesheet" href="./styles/navigation.css" />
     <link rel="stylesheet" href="./styles/gallery.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
 </head>
 
 <body>
+
     <header id="navigation"></header>
-
+    
     <br />
     <br />
     <br />
     <br />
 
-    <h1 class="py-3 m-0 text-center font-weight-normal">Redshift Gallery</h1>
-
-    <div class="container-fluid h-75">
-        <iframe src="https://www.youtube.com/embed/?listType=user_uploads&list=redshiftracing" width="100%" height="100%"
-            autoplay="true" frameborder="0"></iframe>
+    <div class="container">
+        <div class="h2 text-center font-weight-normal m-0">
+            Redshift Gallery
+        </div>
+    </div>
+    <div class="embed-responsive h-75 mt-4">
+        <iframe src="https://www.youtube.com/embed/?listType=user_uploads&list=redshiftracing" width="100%"
+            height="100%" autoplay="true" frameborder="0"></iframe>
     </div>
 
     <div class="container-fluid text-center justify-content-center" id="gallery">
-        <div class="row" id="galleryInner"></div>
+        <div class="row" id="galleryInner">
+        </div>
         <script>
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
@@ -65,13 +67,17 @@
                     for (var i = 0; i < gallery.length; i++) {
                         console.log(gallery[i].image);
                         document.getElementById("galleryInner").innerHTML +=
-                            '<div class="col-sm-4 p-1" data-aos="zoom-in"><div class="border-0 w-100 h-100">' +
-                            '<img class="img-fluid w-100 h-100" src="media/images/rsr/' +
+                            '<div class="col-sm-4" style="padding:1px;">' +
+                            '<a data-fancybox="gallery" class="border-0 w-100 h-100" href="./media/images/rsr/' +
                             gallery[i].image +
-                            '" alt="RSR' +
+                            '">' +
+                            '<img class="img-fluid w-100 h-100" src="./media/images/rsr/' +
+                            gallery[i].image +
+                            '" alt="Redshift Racing Photo ' +
                             (i + 1) +
                             '"/>' +
-                            "</div></div>";
+                            '</a>' +
+                            '</div>';
                     }
                 }
             };
@@ -87,26 +93,18 @@
     <script src="./scripts/footer.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-    <!-- Animation on Scroll JS -->
-    <script src="./scripts/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- Owl Carousel -->
-    <script src="./scripts/owl.carousel.js"></script>
-    <script src="./scripts/owl.carousel.min.js"></script>
-    <script src="./scripts/gallery.js"></script>
+    <!-- Fancybox Gallery -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

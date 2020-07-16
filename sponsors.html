@@ -19,15 +19,11 @@
     <link rel="canonical" href="" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- External Fonts CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Exo:800&display=swap" rel="stylesheet" />
-
-    <!-- Animation on Scroll CSS -->
-    <link href="./styles/aos.css" rel="stylesheet" />
 
     <!-- Other CSS-->
     <link rel="stylesheet" href="./styles/navigation.css" />
@@ -44,71 +40,63 @@
     <br />
     <br />
 
-    <h1 class="py-3 m-0 text-center font-weight-normal">
-        Sponsors &amp; Partners
-    </h1>
-
-    <div class="container text-center justify-content-center" id="sponsors">
-        <div class="row" id="sponsorsInner"></div>
-        <script>
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    var response = JSON.parse(xhttp.responseText);
-                    var sponsor = response.sponsors;
-                    for (var i = 0; i < sponsor.length; i++) {
-                        console.log(sponsor[i].logo);
-                        console.log(sponsor[i].name);
-                        document.getElementById("sponsorsInner").innerHTML +=
-                            '<div class="col-sm-3" data-aos="zoom-in-up"><div class="card">' +
-                            '<img class="card-img-top" src="media/images/sponsors/' +
-                            sponsor[i].logo +
-                            '" alt="' +
-                            sponsor[i].name +
-                            '"/>' +
-                            "</div></div>";
+    <div class="container">
+        <div class="h2 text-center font-weight-normal m-0">
+            Sponsors &amp; Partners
+        </div>
+        <div class="container text-center justify-content-center">
+            <div class="row justify-content-center" id="sponsorsInner"></div>
+            <script>
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var response = JSON.parse(xhttp.responseText);
+                        var sponsor = response.sponsors;
+                        for (var i = 0; i < sponsor.length; i++) {
+                            console.log(sponsor[i].logo);
+                            console.log(sponsor[i].name);
+                            document.getElementById("sponsorsInner").innerHTML +=
+                                '<div class="col-sm-3 p-0">' +
+                                '<div class="card border-0 p-2">' +
+                                '<img class="card-img-top" src="media/images/sponsors/' +
+                                sponsor[i].logo +
+                                '" alt="' +
+                                sponsor[i].name +
+                                '"/>' +
+                                '</div>' +
+                                '</div>';
+                        }
                     }
-                }
-            };
-            xhttp.open("GET", "./txt/sponsors.txt", true);
-            xhttp.send();
-        </script>
+                };
+                xhttp.open("GET", "./txt/sponsors.txt", true);
+                xhttp.send();
+            </script>
+        </div>
+        <!-- Hover makes button white, but on clicking it becomes blue, figure this out-->
+        <section class="d-flex justify-content-center my-4">
+            <a href="./media/Marketing 2019-20.pdf" target="_blank" class="btn btn-outline-danger m-1">Why sponsor
+                us?</a>
+            <a href="./contact.html#writetous" class="btn btn-outline-danger m-1">Contribute to us</a>
+        </section>
     </div>
-
-    <!-- Hover makes button white, but on clicking it becomes blue, figure this out-->
-    <section class="sponsor_proposal container text-center my-2">
-        <form method="GET" target="_blank" action="./media/Marketing 2019-20.pdf">
-            <input type="submit" class="btn btn-info btn-lg" value="Why sponsor us ?" />
-        </form>
-        <br />
-        <form method="GET" target="_blank" action="./contact.html#writetous">
-            <input type="submit" class="btn btn-info btn-lg" value="Contribute to RSR" />
-        </form>
-        <br />
-    </section>
 
     <div id="footer"></div>
 
     <!-- Optional JavaScript -->
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/footer.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/footer.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-        crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
-        crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
-        crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-    <!-- Animation on Scroll JS -->
-    <script src="scripts/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

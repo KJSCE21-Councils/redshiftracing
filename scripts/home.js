@@ -1,75 +1,68 @@
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 0,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+var slider = tns({
+    container: '.home-gallery',
+    items: 1,
+    controls: false,
+    swipeAngle: false,
+    mouseDrag: true,
     nav: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-})
-
-$('.owl').owlCarousel({
-    loop: true,
-    margin: 0,
+    navPosition: "bottom",
+    speed: 300,
     autoplay: true,
-    autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    nav: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 3
-        }
-    }
-})
-
-$('.owl-sponsor').owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    autoplay: true,
     autoplayTimeout: 2000,
+});
+var slider = tns({
+    container: '.home-story',
+    items: 1,
+    controls: false,
+    swipeAngle: false,
+    mouseDrag: true,
+    nav: true,
+    navPosition: "bottom",
     responsive: {
-        0: {
+        425: {
             items: 1,
         },
-        600: {
-            items: 2,
-        },
-        1000: {
+        768: {
             items: 3,
         }
-    }
-})
-
-$(document).ready(function () {
-    var my_posts = $("[rel=tooltip]");
-
-    var size = $(window).width();
-    for (i = 0; i < my_posts.length; i++) {
-        the_post = $(my_posts[i]);
-
-        if (the_post.hasClass('invert') && size >= 767) {
-            the_post.tooltip({ placement: 'left' });
-            the_post.css("cursor", "pointer");
-        } else {
-            the_post.tooltip({ placement: 'rigth' });
-            the_post.css("cursor", "pointer");
+    },
+    speed: 300,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+});
+var slider = tns({
+    container: '.home-press',
+    items: 1,
+    controls: false,
+    swipeAngle: false,
+    mouseDrag: true,
+    nav: true,
+    navPosition: "bottom",
+    speed: 300,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+});
+var slider = tns({
+    container: '.home-sponsors',
+    items: 1,
+    controls: false,
+    swipeAngle: false,
+    mouseDrag: true,
+    nav: true,
+    navPosition: "bottom",
+    responsive: {
+        425: {
+            items: 1,
+        },
+        768: {
+            items: 3,
         }
-    }
+    },
+    speed: 300,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
 });

@@ -27,23 +27,24 @@
   color: black !important;
 }
 .tabbed-navigation .nav-link:hover {
-  color: red !important;
+  color: #e92730 !important;
 }
 .tabbed-navigation .nav-link.active {
-  color: red !important;
+  color: #e92730 !important;
 }
 ul.nav-tabs {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
+  padding: 0px;
   flex-wrap: nowrap;
 }
 ul.nav-tabs li {
   display: inline-block;
 }
 ul.nav-tabs::-webkit-scrollbar {
-  height: 1px;
+  height: 2px;
 }
 .img-fluid {
   width: 100%;

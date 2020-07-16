@@ -1,3 +1,27 @@
+.tns-outer > button {
+  display: none;
+}
+.tns-outer > button:focus {
+  outline: none;
+}
+.tns-nav {
+  text-align: center;
+}
+.tns-nav > button {
+  width: 12px;
+  height: 12px;
+  background: lightgray;
+  border: none;
+  border-radius: 100px;
+  margin: 10px 5px;
+}
+.tns-nav-active {
+  background-color: #b80000 !important;
+  opacity: 0.5;
+}
+.container {
+  max-width: 991px;
+}
 video {
   width: 100%;
 }
@@ -27,67 +51,6 @@ header video {
 header .container {
   position: relative;
   z-index: 2;
-}
-/* header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-} */
-/* h1::after {
-  content: "\A";
-  display: block;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 20%;
-  max-width: 50px;
-  height: 5px;
-  background-color: rgb(255, 0, 0, 0.8);
-  border-radius: 10px;
-  opacity: 0.75;
-  margin-top: 5px;
-  margin-bottom: 5px;
-} */
-#mission,
-#vision {
-  /* border: 1px solid #b80000; */
-  box-shadow: 0 10px 20px -15px #b80000;
-  background-color: #fff;
-  /* filter: drop-shadow(8px 8px 10px rgba(255, 0, 0, 0.1))
-    drop-shadow(-10px -10px 20px rgba(255, 255, 255, 1))
-    drop-shadow(1px 1px 2px rgba(255, 0, 0, 0.1)); */
-  border-radius: 15px;
-}
-.owl-nav {
-  text-align: center;
-  font-size: 250%;
-}
-.owl-nav span {
-  justify-content: center;
-  align-content: center;
-  margin: 0 20px;
-}
-.owl-stage {
-  height: 100% !important;
-}
-.owl-item {
-  height: 100% !important;
-}
-#updates .card {
-  box-shadow: 0 10px 20px -15px #b80000;
-  border: none;
-  background-color: #fff;
-  /* filter: drop-shadow(8px 8px 10px rgba(255, 0, 0, 0.1))
-    drop-shadow(-10px -10px 20px rgba(255, 255, 255, 1))
-    drop-shadow(1px 1px 0.5px rgba(255, 0, 0, 0.05)); */
-}
-#about,
-#gallery {
-  width: 100%;
 }
 .timeline {
   list-style: none;
@@ -136,14 +99,10 @@ header .container {
 .timeline > li > .timeline-panel {
   width: 95%;
   float: left;
-  /* border: 1px solid #d4d4d4; */
+  border: 1px solid #d4d4d4;
   position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 10px 20px -12px #b80000;
-  /* background-color: #f9f9f9;
-  filter: drop-shadow(8px 8px 10px rgba(255, 0, 0, 0.1))
-    drop-shadow(-10px -10px 20px rgba(255, 255, 255, 1))
-    drop-shadow(1px 1px 0.5px rgba(255, 0, 0, 0.05)); */
+  /* -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); */
+  /* box-shadow: 0 10px 20px -12px #b80000; */
   border-radius: 10px;
 }
 .timeline > li > .timeline-panel:before {

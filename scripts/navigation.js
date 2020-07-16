@@ -1,54 +1,48 @@
 document.getElementById("navigation").innerHTML =
-    '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top font-weight-normal text-uppercase" style="z-index:99;">' +
-    '<div class="container">' +
-    '<a class="navbar-brand" href="index.html" style="max-width:180px;">' +
-    '<img src="media/images/rsr-logo.jpg" id="rsr-logo" alt="Redshift Racing Logo" style="">' +
-    '</a>' +
-    '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">' +
+    '<div class="fixed-top" style="padding:12px;">' +
+    '<nav class="navbar navbar-expand-lg navbar-light rounded" style="background-color:white;max-height:64px;padding:6px;">' +
+    '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">' +
     '<span class="navbar-toggler-icon"></span>' +
     '</button>' +
-    '<div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">' +
-    '<div class="nav-ul-list" style="">' +
-    '<ul class="navbar-nav mx-auto justify-content-center text-center">' +
-    '<li id="indexNav" class="nav-item"><a class="nav-link text-left" href="index.html">Home</a></li>' +
-    '<li id="sponsorsNav" class="nav-item"><a class="nav-link text-left" href="sponsors.html">Sponsors</a></li>' +
-    '<li id="galleryNav" class="nav-item"><a class="nav-link text-left" href="gallery.html">Gallery</a></li>' +
-    '<li id="teamNav" class="nav-item"><a class="nav-link text-left" href="team.html">Team</a></li>' +
-    '<li id="contactNav" class="nav-item"><a class="nav-link text-left" href="contact.html">Contact</a></li>' +
+    '<a class="navbar-brand py-0 mx-auto" href="/index.html" style="max-height:100%;">' +
+    '<img src="rsr-logo.jpg" alt="Logo" style="max-height:48px;" class="rounded" />' +
+    '</a>' +
+    '<div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding:10xp;">' +
+    '<ul class="navbar-nav mx-auto" id="navul">' +
+    '<li class="nav-item">' +
+    '<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>' +
+    '</li>' +
+    '<li class="nav-item">' +
+    '<a class="nav-link" href="sponsors.html">Sponsors</a>' +
+    '</li>' +
+    '<li class="nav-item">' +
+    '<a class="nav-link" href="gallery.html">Gallery</a>' +
+    '</li>' +
+    '<li class="nav-item">' +
+    '<a class="nav-link" href="team.html">Team</a>' +
+    '</li>' +
+    '<li class="nav-item">' +
+    '<a class="nav-link" href="contact.html">Contact</a>' +
+    '</li>' +
     '</ul>' +
-    '</div>' +
-    '<div class="justify-content-center text-center" id="somaiya-logo">' +
-    '<a class="navbar-brand px-2" href="https://kjsce.somaiya.edu/en" id="kjsce-logo" target="_blank">' +
-    '<img src="media/images/logos/kjsce-svu.svg" alt="KJSCE-SVU" style="width:100%; height:auto;">' +
+    '<div class="d-flex justify-content-around" style="padding:8px;">' +
+    '<a href="https://kjsce.somaiya.edu/en" target="_blank">' +
+    '<img src="media/images/logos/kjsce-svu.svg" alt="KJSCE-SVU" style="max-height:48px;">' +
     '</a>' +
-    '<a class="navbar-brand px-2" href="https://svv.somaiya.edu/en" id="somaiyatrust-logo" style="max-width:90px;">' +
-    '<img src="media/images/logos/SomaiyaTrust_Logo.jpg" alt="Somaiya Trust" style="width:100%; height:auto;">' +
+    '<a href="https://svv.somaiya.edu/en">' +
+    '<img src="media/images/logos/SomaiyaTrust_Logo.jpg" alt="Somaiya Trust" style="max-height:48px;padding-left:5px;">' +
     '</a>' +
-    '</div>' +
     '</div>' +
     '</div>' +
     '</nav>' +
-    '<hr class="bg-secondary" />';
+    '</div>';
 
-var rootWebsite = "http://baijudodhia.github.io/redshiftracing/";
-var loc = window.location.href;
-if (loc == (rootWebsite + 'index.html')) {
-    var element = document.getElementById("indexNav");
-    element.classList.add("active");
+function setActive() {
+    aObj = document.getElementById('navul').getElementsByTagName('a');
+    for (i = 0; i < aObj.length; i++) {
+        if (document.location.href.indexOf(aObj[i].href) >= 0) {
+            aObj[i].className += ' active';
+        }
+    }
 }
-else if (loc == (rootWebsite + 'sponsors.html')) {
-    var element = document.getElementById("sponsorsNav");
-    element.classList.add("active");
-}
-else if (loc == (rootWebsite + 'gallery.html')) {
-    var element = document.getElementById("galleryNav");
-    element.classList.add("active");
-}
-else if (loc == (rootWebsite + 'team.html')) {
-    var element = document.getElementById("teamNav");
-    element.classList.add("active");
-}
-else if (loc == (rootWebsite + 'contact.html')) {
-    var element = document.getElementById("contactNav");
-    element.classList.add("active");
-}
+window.onload = setActive;
