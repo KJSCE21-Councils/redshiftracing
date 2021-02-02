@@ -47,7 +47,10 @@
   <section class="container tabbed-navigation mt-3" id="teams-content-main">
     <ul class="nav nav-tabs my-2" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#T19-20">2019-20</a>
+        <a class="nav-link active" data-toggle="tab" href="#T20-21">2020-21</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#T19-20">2019-20</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#T18-19">2018-19</a>
@@ -75,7 +78,43 @@
       </li>
     </ul>
     <div class="tab-content font-weight-normal">
-      <div id="T19-20" class="tab-pane text-center active">
+      <div id="T20-21" class="tab-pane text-center active">
+        <h3 class="font-weight-normal py-3 m-0">Team 2020-21</h3>
+        <!-- <img src="./media/images/teams/Team 2020-21.JPEG" class="img-fluid py-2"
+          alt="Team Redshift Racing India 2020-21" /> -->
+        <div class="container px-2 py-3">
+          <div class="row w-100 m-0 p-0" id="team20_21"></div>
+        </div>
+        <script>
+          var xhttp20_21 = new XMLHttpRequest();
+          xhttp20_21.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              var response = JSON.parse(xhttp20_21.responseText);
+              var teams = response.team20_21;
+              for (var i = 0; i < teams.length; i++) {
+                var n = "";
+                for (var j = 0; j < teams[i].names.length; j++) {
+                  n += "&bull;&nbsp;" + teams[i].names[j] + "<br>";
+                }
+                console.log(teams[i].designation);
+                document.getElementById("team20_21").innerHTML +=
+                  '<div class="col-md-4 px-1 py-2">' +
+                  '<div class="card font-weight-normal h-100 p-2">' +
+                  '<div class="card-title p m-0 py-1 text-center border-bottom border-dark">' +
+                  teams[i].designation +
+                  "</div>" +
+                  '<div class="card-body p m-0 p-1 text-left">' +
+                  n +
+                  "</div>" +
+                  "</div></div>";
+              }
+            }
+          };
+          xhttp20_21.open("GET", "./txt/teams.txt", true);
+          xhttp20_21.send();
+        </script>
+      </div>
+      <div id="T19-20" class="tab-pane text-center">
         <h3 class="font-weight-normal py-3 m-0">Team 2019-20</h3>
         <img src="./media/images/teams/Team 2019-20.JPEG" class="img-fluid py-2"
           alt="Team Redshift Racing India 2019-20" />

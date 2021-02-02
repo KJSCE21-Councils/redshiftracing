@@ -1,4 +1,104 @@
 {
+    "team20_21": [
+        {
+            "designation": "Captain",
+            "names": [
+                "Hitansh Mehta"
+            ]
+        },
+        {
+            "designation": "Technical Coordinator",
+            "names": [
+                "Akshay Patel"
+            ]
+        },
+        {
+            "designation": "Admin",
+            "names": [
+                "Yash Navsarikar"
+            ]
+        },
+        {
+            "designation": "Drivers",
+            "names": [
+                "Hitansh Mehta", 
+                "Devansh Dedhia", 
+                "Tirth Jhaveri"
+            ]
+        },
+        {
+            "designation": "Chassis",
+            "names": [
+                "Tirth Jhaveri (Head)",
+                "Sarthak Vora",
+                "Nihar Merchant",
+                "Roosheet", 
+                "Merchant",
+                "Junaidali Surti"
+            ]
+        },
+        {
+            "designation": "Transmission",
+            "names": [
+                "Devansh Dedhia (Head)",
+                "Tejas Jain",
+                "Nilay Juthani",
+                "Rhythm Shah",
+                "Tanmay Patil",
+                "Pranjay Bhavsar",
+                "Keshav Kabra"
+            ]
+        },
+        {
+            "designation": "Suspension & Steering",
+            "names": [
+                "Jay Shah (Suspension Head)",
+                "Kevalya Dhami (Steering Head)",
+                "Rohan Shende",
+                "Dhruv Jian",
+                "Tejas Patil",
+                "Rachit Singh",
+                "Ruturaj Desai",
+                "Amey Mohod",
+                "Sanket Gada",
+                "Niraj Jethwa",
+                "Aditya Deshpande"
+            ]
+        },
+        {
+            "designation": "Brakes",
+            "names": [
+                "Mitesh Butala (Head)",
+                "Aayush Gujarathi",
+                "Prasad Borkar",
+                "Sameeksha Pojari",
+                "Nupoor Panchal"
+            ]
+        },
+        {
+            "designation": "DAQ",
+            "names": [
+                "Prathamesh Bojalwar (Head)",
+                "Swetha Chiliveri",
+                "Siddhi Mali",
+                "Vatsal Kapadia"
+            ]
+        },
+        {
+            "designation" : "Marketing",
+            "names": [
+                "Sagar Naik",
+                "Eshaan Singh",
+                "Karan Dedhia"
+            ]
+        },
+        {
+            "designation": "Website Admin",
+            "names": [
+                "Baiju Dodhia"
+            ]
+        }
+    ],
     "team19_20": [
         {
             "designation": "Captain",
