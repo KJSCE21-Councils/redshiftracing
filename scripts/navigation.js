@@ -1,13 +1,13 @@
 document.getElementById("navigation").innerHTML =
-    '<div class="fixed-top" style="padding:12px;">' +
-    '<nav class="navbar navbar-expand-lg navbar-light rounded" style="background-color:white;max-height:64px;padding:6px;">' +
+    '<div class="fixed-top">' +
+    '<nav class="navbar navbar-expand-lg navbar-light" style="background-color:white;max-height:64px;padding:6px;">' +
     '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">' +
     '<span class="navbar-toggler-icon"></span>' +
     '</button>' +
     '<a class="navbar-brand py-0 mx-auto" href="/index.html" style="max-height:100%;">' +
     '<img src="rsr-logo.jpg" alt="Logo" style="max-height:48px;" class="rounded" />' +
     '</a>' +
-    '<div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding:10xp;">' +
+    '<div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding:10px;">' +
     '<ul class="navbar-nav mx-auto" id="navul">' +
     '<li class="nav-item">' +
     '<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>' +

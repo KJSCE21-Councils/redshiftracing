@@ -1,18 +1,18 @@
 var slider = tns({
-    container: '.home-gallery',
+    container: ".home-gallery",
     items: 1,
     controls: false,
     swipeAngle: false,
     mouseDrag: true,
     nav: true,
     navPosition: "bottom",
-    speed: 300,
+    speed: 200,
     autoplay: true,
     autoplayHoverPause: true,
     autoplayTimeout: 2000,
 });
 var slider = tns({
-    container: '.home-story',
+    container: ".home-story",
     items: 1,
     controls: false,
     swipeAngle: false,
@@ -25,7 +25,7 @@ var slider = tns({
         },
         768: {
             items: 3,
-        }
+        },
     },
     speed: 300,
     autoplay: true,
@@ -33,7 +33,7 @@ var slider = tns({
     autoplayTimeout: 2000,
 });
 var slider = tns({
-    container: '.home-press',
+    container: ".home-press",
     items: 1,
     controls: false,
     swipeAngle: false,
@@ -46,7 +46,7 @@ var slider = tns({
     autoplayTimeout: 2000,
 });
 var slider = tns({
-    container: '.home-sponsors',
+    container: ".home-sponsors",
     items: 1,
     controls: false,
     swipeAngle: false,
@@ -59,7 +59,7 @@ var slider = tns({
         },
         768: {
             items: 3,
-        }
+        },
     },
     speed: 300,
     autoplay: true,
